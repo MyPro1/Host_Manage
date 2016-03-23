@@ -12,7 +12,9 @@
     <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="/statics/css/main.css" rel="stylesheet">
     <link href="/statics/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
 
     <!-- Custom styles for this template -->
     <link href="/statics/bootstrap/css/dashboard.css" rel="stylesheet">
@@ -56,13 +58,24 @@
             <li><a href="#">监控</a></li>
             <li><a href="#">主机配置管理</a></li>
           </ul>
-
+					<li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-table"></i><span>装机列表</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="#">系统安装</a>
+                            </li>
+                            <li><a href="#">安装记录</a>
+                            </li>
+                        </ul>
+                    </li>	
       </div>
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           	{% block page-content %}
 			{% endblock %}
+			
       </div>
+      
     </div>
+    
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -70,5 +83,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/statics/js/jquery-1.11.3.js"></script>
     <script src="/statics/bootstrap/css/bootstrap.min.css"></script>
+
   </body>
 </html>

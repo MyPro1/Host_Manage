@@ -24,5 +24,6 @@ urlpatterns = patterns('',
     url(r'^taskconf/(?P<task_id>\d+)/$',views.TaskConf),
     url(r'^task_result/(?P<task_result_id>\d+)/$',views.task_result),
     url(r'^task_detail/(?P<task_detail_id>\d+)/$',views.task_detail),
+    url(r'^index/$',views.index),
 )
 

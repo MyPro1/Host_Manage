@@ -132,7 +132,8 @@ def task_detail(request,task_detail_id):
     return HttpResponse(task_list)
     #return render_to_response('task_detail.html')
 
-
+def index(request):
+    return render_to_response('index.html')
 
 
 

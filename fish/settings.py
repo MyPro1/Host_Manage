@@ -20,10 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'x5%!4u!7widq8om%6i#m)xdmq@!42@xf%1utf51!xm+@$tb&3@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+#TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
+#ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['*']
 
 
@@ -71,7 +74,7 @@ DATABASES = {
         'NAME': 'fish',
         'USER': 'root',
         'PASSWORD':'linkage123',
-        'HOST':'192.168.10.108',
+        'HOST':'192.168.10.107',
         "PORT":''
     }
 }
@@ -96,9 +99,9 @@ USE_TZ = True
 STATIC_URL = '/statics/'
 
 STATICFILES_DIRS=(
-    os.path.join(BASE_DIR,'statics'),
+    BASE_DIR + '/statics',
 )
 TEMPLATE_DIRS=(
-    os.path.join(BASE_DIR,'templates'),
+    BASE_DIR + '/templates',
 )
 
